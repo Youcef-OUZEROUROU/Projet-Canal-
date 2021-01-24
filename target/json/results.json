@@ -1,0 +1,166 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-01-24T20:39:33.531Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1445036900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "modules.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Modification de l\u0027adresse d\u0027un abonné résidant en France",
+        "description": "",
+        "id": "modifier-l-adresse-d-un-abonné;modification-de-l-adresse-d-un-abonné-résidant-en-france",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "modules.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3252514600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "un abonné voudrait se connecter à son espace personnel",
+            "match": {
+              "location": "step_definition.ModificationAdresseStepDefinition.unAbonnéVoudraitSeConnecterÀSonEspacePersonnel()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 130491600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Il entre son email \"youyou529@hotmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"youyou529@hotmail.com\"",
+                  "offset": 19
+                }
+              ],
+              "location": "step_definition.ModificationAdresseStepDefinition.ilEntreSonEmail(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2809138000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Il entre son mot de passe \"Youyou529\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Youyou529\"",
+                  "offset": 26
+                }
+              ],
+              "location": "step_definition.ModificationAdresseStepDefinition.ilEntreSonMotDePasse(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Il appuie sur le bouton",
+            "match": {
+              "location": "step_definition.ModificationAdresseStepDefinition.ilAppuieSurLeBouton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7574859900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Je me déplace dans paramètre du compte",
+            "match": {
+              "location": "step_definition.ModificationAdresseStepDefinition.jeMeDéplaceDansParamètreDuCompte()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4703935600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "le conseiller modifie l adresse de l\u0027abonné.",
+            "match": {
+              "location": "step_definition.ModificationAdresseStepDefinition.leConseillerModifieLAdresseDeLAbonné()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c[11] AVENUE BON AIR\u003e but was:\u003c[23] AVENUE BON AIR\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat step_definition.ModificationAdresseStepDefinition.laNouvelleAdresseDeLAbonnéEstEnregistréeSurLEnsembleDesContratsDeLAbonné(ModificationAdresseStepDefinition.java:88)\r\n\tat ✽.la nouvelle adresse de l’abonné est enregistrée sur l ensemble des contrats de l\u0027abonné.(file:///C:/Users/youcef/Desktop/Projet_Canal/src/test/resources/features/modification%20de%20l\u0027adresse%20d\u0027un%20abonné.feature:11)\r\n",
+              "duration": 2041733400,
+              "status": "failed"
+            },
+            "line": 11,
+            "name": "la nouvelle adresse de l’abonné est enregistrée sur l ensemble des contrats de l\u0027abonné.",
+            "match": {
+              "location": "step_definition.ModificationAdresseStepDefinition.laNouvelleAdresseDeLAbonnéEstEnregistréeSurLEnsembleDesContratsDeLAbonné()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "un mouvement de modification d\u0027adresse est créé avec la nouvelle adresse client",
+            "match": {
+              "location": "step_definition.ModificationAdresseStepDefinition.unMouvementDeModificationDAdresseEstCrééAvecLaNouvelleAdresseClient()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@toto"
+          }
+        ]
+      }
+    ],
+    "name": "Modifier l\u0027adresse d\u0027un abonné",
+    "description": "",
+    "id": "modifier-l-adresse-d-un-abonné",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/modification%20de%20l\u0027adresse%20d\u0027un%20abonn%C3%A9.feature",
+    "tags": [
+      {
+        "name": "@toto",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
