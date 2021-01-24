@@ -47,11 +47,10 @@ public class ModificationAdresseStepDefinition {
     @And("Je me déplace dans paramètre du compte")
     public void jeMeDéplaceDansParamètreDuCompte() throws InterruptedException {
         Thread.sleep(2000);
-        driver.findElement(By.className("menu___pecxl")).click();
-        driver.findElement(By.linkText("Espace Client")).click();
+        moveCompte();
         Thread.sleep(2000);
-        ArrayList<String> tabs2 = new ArrayList<String> (driver.getWindowHandles());
-        driver.switchTo().window(tabs2.get(1));
+        ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
+        driver.switchTo().window(tabs.get(1));
         driver.findElement(By.linkText("Compte")).click();
         Thread.sleep(2000);
         driver.findElement(By.linkText("Modifier mes coordonnées")).click();
@@ -61,14 +60,9 @@ public class ModificationAdresseStepDefinition {
     @When("le conseiller modifie l adresse de l'abonné.")
     public void leConseillerModifieLAdresseDeLAbonné() throws InterruptedException {
         Thread.sleep(2000);
-        driver.findElement(By.name("zipCode")).sendKeys("33700");
-        driver.findElement(By.id("streetName")).clear();
-        driver.findElement(By.id("streetName")).sendKeys(adresse);
-        driver.findElement(By.cssSelector("#fix > input")).clear();
-        driver.findElement(By.cssSelector("#fix > input")).sendKeys(n1);
-        driver.findElement(By.className("spinner--btn")).click();
+        modificationAdress();
         Thread.sleep(2000);
-        driver.findElement(By.className("button")).click();
+        clickbtn();
 
 
     }
@@ -83,8 +77,6 @@ public class ModificationAdresseStepDefinition {
     public void laNouvelleAdresseDeLAbonnéEstEnregistréeSurLEnsembleDesContratsDeLAbonné() throws InterruptedException {
         Thread.sleep(2000);
         Assert.assertEquals("Compte - Espace Client CANAL+", driver.getTitle());
-        System.out.println(adresse);
-        System.out.println(driver.findElement(By.cssSelector("#app > div > div > main > div > div > section:nth-child(2) > div > div:nth-child(2) > div:nth-child(1)")).getText());
         Assert.assertEquals(adresse, driver.findElement(By.cssSelector("#app > div > div > main > div > div > section:nth-child(2) > div > div:nth-child(2) > div:nth-child(1)")).getText());
     }
 }

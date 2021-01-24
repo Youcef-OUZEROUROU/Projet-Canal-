@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-01-24T20:39:33.531Z",
+        "start_timestamp": "2021-01-24T21:33:04.117Z",
         "before": [
           {
             "result": {
-              "duration": 1445036900,
+              "duration": 1458810200,
               "status": "passed"
             },
             "match": {
@@ -22,6 +22,7 @@
         "after": [
           {
             "result": {
+              "duration": 623215800,
               "status": "passed"
             },
             "match": {
@@ -34,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3252514600,
+              "duration": 3192376900,
               "status": "passed"
             },
             "line": 5,
@@ -46,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 130491600,
+              "duration": 99702500,
               "status": "passed"
             },
             "line": 6,
@@ -64,7 +65,7 @@
           },
           {
             "result": {
-              "duration": 2809138000,
+              "duration": 2413000100,
               "status": "passed"
             },
             "line": 7,
@@ -93,7 +94,7 @@
           },
           {
             "result": {
-              "duration": 7574859900,
+              "duration": 7386714200,
               "status": "passed"
             },
             "line": 9,
@@ -105,7 +106,7 @@
           },
           {
             "result": {
-              "duration": 4703935600,
+              "duration": 4798734400,
               "status": "passed"
             },
             "line": 10,
@@ -117,8 +118,8 @@
           },
           {
             "result": {
-              "error_message": "org.junit.ComparisonFailure: expected:\u003c[11] AVENUE BON AIR\u003e but was:\u003c[23] AVENUE BON AIR\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat step_definition.ModificationAdresseStepDefinition.laNouvelleAdresseDeLAbonnéEstEnregistréeSurLEnsembleDesContratsDeLAbonné(ModificationAdresseStepDefinition.java:88)\r\n\tat ✽.la nouvelle adresse de l’abonné est enregistrée sur l ensemble des contrats de l\u0027abonné.(file:///C:/Users/youcef/Desktop/Projet_Canal/src/test/resources/features/modification%20de%20l\u0027adresse%20d\u0027un%20abonné.feature:11)\r\n",
-              "duration": 2041733400,
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c[57] AVENUE BON AIR\u003e but was:\u003c[23] AVENUE BON AIR\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat step_definition.ModificationAdresseStepDefinition.laNouvelleAdresseDeLAbonnéEstEnregistréeSurLEnsembleDesContratsDeLAbonné(ModificationAdresseStepDefinition.java:80)\r\n\tat ✽.la nouvelle adresse de l’abonné est enregistrée sur l ensemble des contrats de l\u0027abonné.(file:///C:/Users/youcef/Desktop/Projet_Canal/src/test/resources/features/modification%20de%20l\u0027adresse%20d\u0027un%20abonné.feature:11)\r\n",
+              "duration": 2034509000,
               "status": "failed"
             },
             "line": 11,
