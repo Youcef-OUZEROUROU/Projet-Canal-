@@ -27,7 +27,7 @@ public class Hooks {
 
     @After("@toto")
     public void tearDown (){
-        driver.quit();
+        //driver.quit();
 
     }
 }

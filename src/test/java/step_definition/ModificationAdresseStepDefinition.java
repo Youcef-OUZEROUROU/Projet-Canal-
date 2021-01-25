@@ -6,25 +6,23 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.interactions.Actions;
 
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.Random;
 
 import static modules.Hooks.driver;
 import static page_objects.GooglePage.*;
+import static utils.RandomString.*;
 
 public class ModificationAdresseStepDefinition {
-    Random rnd = new Random();
-    String n = String.valueOf(rnd.nextInt(99));
-    String makeAdresse = n+ " "+ "AVENUE BON AIR";
-    String adresse = makeAdresse;
-    String n1 = "01" + rnd.nextInt(90000000);
+
 
 
     @Given("un abonné voudrait se connecter à son espace personnel")
     public void unAbonnéVoudraitSeConnecterÀSonEspacePersonnel() throws InterruptedException {
         driver.get("https://compte-canal.canal-plus.com/oauth2/authentication?displayTvByCanal=true&from=idpoauth2&idpName=myCANAL&omnitureChannel=mycanal&pass_target=https%3A%2F%2Fpass.canal-plus.com%2FIdPOAuth2%2Fauth%2Fmycanal%3Fclient_id%3D2E4A08AA4ACEF15A%26portailId%3D23%26redirect_uri%3Dhttps%253A%252F%252Fboutique.canalplus.com%252Foffres-packagees%252F%26response_type%3Dcode%26scope%3Dpass_profile%2520email%26state%3Dorigref%253Dhttps%253A%252F%252Fboutique.canalplus.com%252Foffres-packagees%252F&portailId=0&socialLinksDisabled=true&sourceURL=https%3A%2F%2Fpass.canal-plus.com%2FIdPOAuth2%2Fauth%2Fmycanal%3Fclient_id%3D2E4A08AA4ACEF15A%26portailId%3D23%26redirect_uri%3Dhttps%253A%252F%252Fboutique.canalplus.com%252Foffres-packagees%252F%26response_type%3Dcode%26scope%3Dpass_profile%2520email%26state%3Dorigref%253Dhttps%253A%252F%252Fboutique.canalplus.com%252Foffres-packagees%252F&ssoconf=auth_oauth2");
-        driver.manage().window().maximize();
         Thread.sleep(2000);
 
     }

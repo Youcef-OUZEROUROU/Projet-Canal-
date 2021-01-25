@@ -1,6 +1,5 @@
 package page_objects;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -11,7 +10,7 @@ public class GooglePage {
     static Random rnd = new Random();
     static String n = String.valueOf(rnd.nextInt(99));
     static String makeAdresse = n+ " "+ "AVENUE BON AIR";
-    static String adresse = makeAdresse;
+    public static String adresse = makeAdresse;
     static String n1 = "01" + rnd.nextInt(90000000);
 
 
